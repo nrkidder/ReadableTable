@@ -1,0 +1,33 @@
+<html>
+    <head><title>AlternatingTableRows</title>
+    <style>
+    	table { border: 2px solid black; empty-cells:show; }
+    	tr, td { border: 1px solid; }
+    	th { font-weight: bold; border: 1px solid blue; }
+    	.a (border: 1 px solid grey }
+    </style>
+    <script src="jquery/jquery.js"></script>
+
+	<script>
+	$(document).ready(function()
+	{
+
+	  //for table row
+	  $("tr:even").css("background-color", "#FEFEFE");
+	  $("tr:odd").css("background-color", "#EFF1F1");
+	});
+    </script>
+    </head>
+<body>
+<table>
+    <tr class=a><th> Col 1 </th><th> Col 2 </th><th> Col 3 </th><th> Col 4 </th></tr>
+    <tr><td> &nbsp; </td><td>  </td><td>  </td><td>  </td></tr>
+    <tr><td> &nbsp; </td><td>  </td><td>  </td><td>  </td></tr>
+    <tr><td> &nbsp; </td><td>  </td><td>  </td><td>  </td></tr>
+    <tr><td> &nbsp; </td><td>  </td><td>  </td><td>  </td></tr>
+    <tr><td> &nbsp; </td><td>  </td><td>  </td><td>  </td></tr>
+    <tr><td> &nbsp; </td><td>  </td><td>  </td><td>  </td></tr>
+    <tr><td> &nbsp; </td><td>  </td><td>  </td><td>  </td></tr>
+</table>
+    </body>
+</html>
